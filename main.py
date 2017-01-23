@@ -52,14 +52,13 @@ class User():
         self.bath = int(bath)
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
-        # refreshes table user because only one person needs to use it right now
-        cur.execute('''DROP TABLE User''')
-        cur.execute('''CREATE TABLE User (desired integer, sqft integer, bed integer, bath integer)''')
+
+        cur.execute('''CREATE TABLE IF NOT EXISTS User (id integer, desired integer, sqft integer, bed integer, bath integer)''')
         conn.close()
 
     def databasesearch(self):
-
-        matcheslist = list() #all of the matches are stored under this list
+        completematch = list()
+        matcheslist = list()  # all of the matches are stored under this list
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
         # selects all four characteristics under all four being matched by user
@@ -67,6 +66,7 @@ class User():
                     (self.dprice, self.sqft, self.bed, self.bath))
         matches = cur.fetchall()
         matcheslist.append(matches)
+        completematch.append(matches)
         # stored under matches variable
         costpersqft = list()  # list holds later cost per sqft which is calculated
         # below to for loop selects all houses where each combination of characteristics of the user's house matches the database
@@ -117,18 +117,22 @@ class User():
             # goes through matches list that is returned and prints each list in that list
             print(lst)
             for lst2 in lst:
-                print("iterated:",lst2)
+                print("iterated:", lst2)
                 sqftcost = lst2[0] / lst2[1]
                 costpersqft.append(sqftcost)
-            # for alst in lst:
-            #     print(alst)
-            # appends cost per sqft to corresponding list
-        #     costpersqft.append(float(lst[0] / lst[1]))
+                # for alst in lst:
+                #     print(alst)
+                # appends cost per sqft to corresponding list
+        # costpersqft.append(float(lst[0] / lst[1]))
         print(costpersqft)
+        for value in costpersqft:
+            print(value*self.sqft)
+        print(completematch)
         conn.commit()
 
 
 # admin = Admin()
-user = User(100000, 3500, 4, 3)
+user = User(538000, 53504, 4, 3)
 user.databasesearch()
+
 # TODO make this into a UI or callable from another program
