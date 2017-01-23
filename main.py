@@ -2,7 +2,7 @@ import _sqlite3 as sql
 
 
 # Admin class to add new houses in. This will be taken care of through web crawling and data retrieval. Only useful for testing
-class Admin():
+class Admin:
     def __init__(self):
         # At initiation of admin class, four characteristics of each house is recorded
         sqft = input("Square foot: \n")
@@ -41,9 +41,12 @@ class Admin():
             print("nice. good job using common sense")
             return 0
 
+class Populate:
+    def __init__(self):
+        pass
 
 # new seller class
-class User():
+class User:
     def __init__(self, desired_price, sqft, bed, bath):
         # takes parameters from user and initializes them
         self.dprice = int(desired_price)
