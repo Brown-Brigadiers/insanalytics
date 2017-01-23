@@ -135,7 +135,7 @@ class User:
 
 
 # admin = Admin()
-user = User(538000, 53504, 4, 3)
+user = User(538000, 1000, 4, 3)
 user.databasesearch()
 
 # TODO make this into a UI or callable from another program
