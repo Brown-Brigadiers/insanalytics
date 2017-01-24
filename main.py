@@ -41,9 +41,8 @@ class Admin:
             print("nice. good job using common sense")
             return 0
 
-class Populate:
-    def __init__(self):
-        pass
+class Calculate:
+    pass
 
 # new seller class
 class User:
