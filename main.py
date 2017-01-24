@@ -41,8 +41,6 @@ class Admin:
             print("nice. good job using common sense")
             return 0
 
-class Calculate:
-    pass
 
 # new seller class
 class User:
@@ -54,13 +52,14 @@ class User:
         self.bath = int(bath)
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
-
-        cur.execute('''CREATE TABLE IF NOT EXISTS User (id integer, desired integer, sqft integer, bed integer, bath integer)''')
+        cur.execute(
+            '''CREATE TABLE IF NOT EXISTS User (id integer, desired integer, sqft integer, bed integer, bath integer)''')
         conn.close()
 
     def databasesearch(self):
         completematch = list()
         matcheslist = list()  # all of the matches are stored under this list
+        costs = list()
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
         # selects all four characteristics under all four being matched by user
@@ -117,24 +116,45 @@ class User:
         matcheslist.append(matches)
         for lst in matcheslist:
             # goes through matches list that is returned and prints each list in that list
-            print(lst)
+            # print(lst)
             for lst2 in lst:
-                print("iterated:", lst2)
+                # print("iterated:", lst2)
                 sqftcost = lst2[0] / lst2[1]
                 costpersqft.append(sqftcost)
                 # for alst in lst:
                 #     print(alst)
                 # appends cost per sqft to corresponding list
         # costpersqft.append(float(lst[0] / lst[1]))
-        print(costpersqft)
+        # print(costpersqft)
         for value in costpersqft:
-            print(value*self.sqft)
-        print(completematch)
+            # print(value * self.sqft)
+            totalcost = value * self.sqft
+            costs.append(totalcost)
+        # print(completematch)
         conn.commit()
+        return costs
 
 
+# calculate class derived from User
+class Calculate(User):
+    def __init__(self, dprice, sqft, bed, bath):
+        User.__init__(self, dprice, sqft, bed, bath)
+        costs = User.databasesearch(self)
+        costs = costs.sort(key=float)
+
+        total = 0
+        count = 0
+        for thing in costs:
+            total += int(thing)
+            count += 1
+        print(total)
+        average = total / count
+        print(average)
+
+
+# c = Calculate()
 # admin = Admin()
 user = User(538000, 1000, 4, 3)
-user.databasesearch()
-
+# user.databasesearch()
+c = Calculate(user.dprice, user.sqft, user.bed, user.bath)
 # TODO make this into a UI or callable from another program
