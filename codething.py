@@ -44,7 +44,7 @@ class Admin(object):
 
 
 # new seller class
-class User(Interface):
+class User:
     def __init__(self, desired_price, sqft, bed, bath):
         # takes parameters from user and initializes them
         self.dprice = int(desired_price)
@@ -153,7 +153,11 @@ class Calculate(User):
         cur.execute('''SELECT sqft, bed, bath from Main''')
         allthedata = cur.fetchall()
         print(allthedata)
-        numpy.transpose(allthedata, 0)
+        array = numpy.array(allthedata)
+        print(array)
+        print(len(array))
+        array = array.shape
+        print(array)
 
 class Interface(object):
     def __init__(self):
