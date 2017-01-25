@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ddc09653-56e1-4917-844c-b5417c81326f" name="Default" comment="">
 <<<<<<< master
+<<<<<<< master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codething.py" afterPath="$PROJECT_DIR$/codething.py" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calculate.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface.py" />
@@ -14,7 +18,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/codething.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codething.py" afterPath="$PROJECT_DIR$/codething.py" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
     </list>
     <ignored path="Insanalytics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,6 +47,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< master
+<<<<<<< master
       <file leaf-file-name="codething.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codething.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,6 +57,9 @@
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#1735#6203#0" expanded="false" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
       <file leaf-file-name="runit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runit.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,14 +67,31 @@
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+      <file leaf-file-name="codething.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codething.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="158" column="27" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#1735#6203#0" expanded="false" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
               </folding>
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< master
+<<<<<<< master
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
       <file leaf-file-name="user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,7 +132,12 @@
           </provider>
         </entry>
       </file>
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -119,15 +156,25 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.py" />
 <<<<<<< master
+<<<<<<< master
         <option value="$PROJECT_DIR$/codething.py" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/interface.py" />
         <option value="$PROJECT_DIR$/admin.py" />
         <option value="$PROJECT_DIR$/codething.py" />
         <option value="$PROJECT_DIR$/user.py" />
         <option value="$PROJECT_DIR$/calculate.py" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+        <option value="$PROJECT_DIR$/codething.py" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
       </list>
     </option>
   </component>
@@ -163,10 +210,18 @@
     </navigator>
     <panes>
 <<<<<<< master
+<<<<<<< master
       <pane id="Scope" />
 =======
       <pane id="Scratches" />
 >>>>>>> cleaned up classes
+=======
+<<<<<<< interface
+      <pane id="Scratches" />
+=======
+      <pane id="Scope" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,10 +243,18 @@
         </subPane>
       </pane>
 <<<<<<< master
+<<<<<<< master
       <pane id="Scratches" />
 =======
       <pane id="Scope" />
 >>>>>>> cleaned up classes
+=======
+<<<<<<< interface
+      <pane id="Scope" />
+=======
+      <pane id="Scratches" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,8 +299,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Insanalytics" />
 <<<<<<< master
+<<<<<<< master
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codething.py" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
       <option name="SCRIPT_NAME" value="C:\Users\s-nnarasimman\Insanalytics\runit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -256,7 +323,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Insanalytics" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codething.py" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -396,6 +469,7 @@
       <method />
     </configuration>
 <<<<<<< master
+<<<<<<< master
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
       <item index="1" class="java.lang.String" itemvalue="Python.codething" />
@@ -405,6 +479,9 @@
         <item index="0" class="java.lang.String" itemvalue="Python.codething" />
         <item index="1" class="java.lang.String" itemvalue="Python.main" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
       <item index="1" class="java.lang.String" itemvalue="Python.codething" />
@@ -415,7 +492,20 @@
         <item index="0" class="java.lang.String" itemvalue="Python.codething" />
         <item index="1" class="java.lang.String" itemvalue="Python.test" />
         <item index="2" class="java.lang.String" itemvalue="Python.main" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.codething" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.codething" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
       </list>
     </recent_temporary>
   </component>
@@ -451,6 +541,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
 <<<<<<< master
+<<<<<<< master
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -459,6 +550,17 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3611111" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> cleaned up classes
+=======
+<<<<<<< interface
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3611111" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -514,7 +616,11 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< master
+<<<<<<< master
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
     <entry file="file://$PROJECT_DIR$/runit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -541,7 +647,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
@@ -608,11 +719,15 @@
       </provider>
     </entry>
 <<<<<<< master
+<<<<<<< master
     <entry file="file://E:/WinPython-64bit-3.4.4.2/python-3.4.4.amd64/Lib/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="554" column="7" selection-start-line="554" selection-start-column="7" selection-end-line="554" selection-end-column="7" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://E:/WinPython-64bit-3.4.4.2/python-3.4.4.amd64/Lib/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -760,11 +875,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+    <entry file="file://E:/WinPython-64bit-3.4.4.2/python-3.4.4.amd64/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="554" column="7" selection-start-line="554" selection-start-column="7" selection-end-line="554" selection-end-column="7" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< master
 <<<<<<< master
     <entry file="file://$PROJECT_DIR$/codething.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,13 +899,28 @@
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#1735#6203#0" expanded="false" />
 =======
+=======
+<<<<<<< interface
+>>>>>>> numpy arrays?
     <entry file="file://$PROJECT_DIR$/runit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+<<<<<<< master
 >>>>>>> cleaned up classes
+=======
+=======
+    <entry file="file://$PROJECT_DIR$/codething.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="158" column="27" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#1735#6203#0" expanded="false" />
+>>>>>>> numpy arrays?
+>>>>>>> numpy arrays?
           </folding>
         </state>
       </provider>
