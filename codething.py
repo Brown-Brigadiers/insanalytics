@@ -1,8 +1,9 @@
 import _sqlite3 as sql
+import numpy
 
 
 # Admin class to add new houses in. This will be taken care of through web crawling and data retrieval. Only useful for testing
-class Admin:
+class Admin(object):
     def __init__(self):
         # At initiation of admin class, four characteristics of each house is recorded
         sqft = input("Square foot: \n")
@@ -43,7 +44,7 @@ class Admin:
 
 
 # new seller class
-class User:
+class User(object):
     def __init__(self, desired_price, sqft, bed, bath):
         # takes parameters from user and initializes them
         self.dprice = int(desired_price)
@@ -139,17 +140,20 @@ class User:
 class Calculate(User):
     def __init__(self, dprice, sqft, bed, bath):
         User.__init__(self, dprice, sqft, bed, bath)
-        costs = User.databasesearch(self)
-        costs = costs.sort(key=float)
+        # initializes with User's values
 
-        total = 0
-        count = 0
-        for thing in costs:
-            total += int(thing)
-            count += 1
-        print(total)
-        average = total / count
-        print(average)
+    def linear_regression(self):
+        dprice = self.dprice
+        sqft = self.sqft
+        bed = self.bed
+        bath = self.bath
+        conn = sql.connect("data.sqlite")
+        cur = conn.cursor()
+        # selects ALLLL the x data that is not cost
+        cur.execute('''SELECT sqft, bed, bath from Main''')
+        allthedata = cur.fetchall()
+        print(allthedata)
+        numpy.transpose(allthedata, 0)
 
 
 # c = Calculate()
@@ -157,4 +161,5 @@ class Calculate(User):
 user = User(538000, 1000, 4, 3)
 # user.databasesearch()
 c = Calculate(user.dprice, user.sqft, user.bed, user.bath)
+c.linear_regression()
 # TODO make this into a UI or callable from another program
