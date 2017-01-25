@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc09653-56e1-4917-844c-b5417c81326f" name="Default" comment="">
+<<<<<<< HEAD
 <<<<<<< interface
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calculate.py" />
@@ -15,6 +16,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codething.py" afterPath="$PROJECT_DIR$/codething.py" />
 >>>>>>> numpy arrays?
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codething.py" afterPath="$PROJECT_DIR$/codething.py" />
+>>>>>>> calculate
     </list>
     <ignored path="Insanalytics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +40,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
 <<<<<<< interface
       <file leaf-file-name="runit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runit.py">
@@ -47,17 +53,26 @@
       <file leaf-file-name="codething.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codething.py">
           <provider selected="true" editor-type-id="text-editor">
+=======
+      <file leaf-file-name="codething.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codething.py">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> calculate
             <state relative-caret-position="329">
               <caret line="158" column="27" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#1735#6203#0" expanded="false" />
+<<<<<<< HEAD
 >>>>>>> numpy arrays?
+=======
+>>>>>>> calculate
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< interface
       <file leaf-file-name="user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
@@ -101,6 +116,8 @@
       </file>
 =======
 >>>>>>> numpy arrays?
+=======
+>>>>>>> calculate
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -118,6 +135,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.py" />
+<<<<<<< HEAD
 <<<<<<< interface
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/interface.py" />
@@ -128,6 +146,9 @@
 =======
         <option value="$PROJECT_DIR$/codething.py" />
 >>>>>>> numpy arrays?
+=======
+        <option value="$PROJECT_DIR$/codething.py" />
+>>>>>>> calculate
       </list>
     </option>
   </component>
@@ -162,9 +183,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
 <<<<<<< interface
       <pane id="Scratches" />
 =======
+=======
+>>>>>>> calculate
       <pane id="Scope" />
 >>>>>>> numpy arrays?
       <pane id="ProjectPane">
@@ -187,11 +211,15 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
 <<<<<<< interface
       <pane id="Scope" />
 =======
       <pane id="Scratches" />
 >>>>>>> numpy arrays?
+=======
+      <pane id="Scratches" />
+>>>>>>> calculate
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,6 +263,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Insanalytics" />
+<<<<<<< HEAD
 <<<<<<< interface
       <option name="SCRIPT_NAME" value="C:\Users\s-nnarasimman\Insanalytics\runit.py" />
       <option name="PARAMETERS" value="" />
@@ -257,6 +286,9 @@
 =======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codething.py" />
 >>>>>>> numpy arrays?
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codething.py" />
+>>>>>>> calculate
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -395,6 +427,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< interface
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
@@ -416,6 +449,16 @@
         <item index="0" class="java.lang.String" itemvalue="Python.codething" />
         <item index="1" class="java.lang.String" itemvalue="Python.main" />
 >>>>>>> numpy arrays?
+=======
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.codething" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.codething" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+>>>>>>> calculate
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +501,10 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 >>>>>>> numpy arrays?
+=======
+>>>>>>> calculate
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -513,6 +559,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< interface
     <entry file="file://$PROJECT_DIR$/runit.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -542,6 +589,8 @@
     </entry>
 =======
 >>>>>>> numpy arrays?
+=======
+>>>>>>> calculate
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
@@ -607,6 +656,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< interface
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://E:/WinPython-64bit-3.4.4.2/python-3.4.4.amd64/Lib/site-packages/numpy/core/fromnumeric.py">
@@ -739,6 +789,23 @@
             <marker date="1459879924000" expanded="true" signature="91976:95492" placeholder="&quot;&quot;&quot;Compute the variance along the specified axis....&quot;&quot;&quot;" />
             <marker date="1459879924000" expanded="true" signature="95526:95678" placeholder="..." />
             <marker date="1459879924000" expanded="true" signature="95539:95630" placeholder="..." />
+=======
+    <entry file="file://E:/WinPython-64bit-3.4.4.2/python-3.4.4.amd64/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="554" column="7" selection-start-line="554" selection-start-column="7" selection-end-line="554" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codething.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="158" column="27" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#1735#6203#0" expanded="false" />
+>>>>>>> calculate
           </folding>
         </state>
       </provider>
