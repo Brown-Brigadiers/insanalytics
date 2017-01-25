@@ -44,7 +44,7 @@ class Admin(object):
 
 
 # new seller class
-class User(object):
+class User(Interface):
     def __init__(self, desired_price, sqft, bed, bath):
         # takes parameters from user and initializes them
         self.dprice = int(desired_price)
@@ -155,7 +155,8 @@ class Calculate(User):
         print(allthedata)
         numpy.transpose(allthedata, 0)
 
-
+class Interface(object):
+    def __init__:
 # c = Calculate()
 # admin = Admin()
 user = User(538000, 1000, 4, 3)
