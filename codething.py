@@ -156,7 +156,9 @@ class Calculate(User):
         numpy.transpose(allthedata, 0)
 
 class Interface(object):
-    def __init__:
+    def __init__(self):
+        print("Welcome!")
+
 # c = Calculate()
 # admin = Admin()
 user = User(538000, 1000, 4, 3)
