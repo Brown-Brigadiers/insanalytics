@@ -2,7 +2,8 @@ import _sqlite3 as sql
 import numpy
 from interface import Interface
 from admin import Admin
-
+from user import User
+from calculate import Calculate
 
 # c = Calculate()
 # admin = Admin()

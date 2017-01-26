@@ -1,4 +1,7 @@
+from pandas.compat import numpy
+
 from interface import Interface
+import sqlite3 as sql
 # new seller class
 class User(Interface):
     def __init__(self, desired_price, sqft, bed, bath):
@@ -13,7 +16,6 @@ class User(Interface):
         cur.execute(
             '''CREATE TABLE IF NOT EXISTS User (id integer, desired integer, sqft integer, bed integer, bath integer)''')
         conn.close()
-
     def databasesearch(self):
         completematch = list()
         matcheslist = list()  # all of the matches are stored under this list
@@ -91,3 +93,15 @@ class User(Interface):
         # print(completematch)
         conn.commit()
         return costs
+    def linear_regression(self):
+        conn = sql.connect("data.sqlite")
+        cur = conn.cursor()
+        # selects ALLLL the x data that is not cost
+        cur.execute('''SELECT sqft, bed, bath from Main''')
+        allthedata = cur.fetchall()
+        print(allthedata)
+        array = numpy.array(allthedata)
+        print(array)
+        print(len(array))
+        array = array.shape
+        print(array)
