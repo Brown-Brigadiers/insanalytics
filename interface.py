@@ -1,5 +1,4 @@
-import tkinter as tk
+import kivy
 class Interface(object):
     def __init__(self):
-        top = tk.Tk()
-        top.mainloop()
+        pass
