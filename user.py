@@ -1,5 +1,4 @@
 import numpy
-
 from interface import Interface
 import sqlite3 as sql
 # new seller class
