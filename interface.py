@@ -12,5 +12,3 @@ class Interface(App):
         a.add_widget(bu)
         return a
 
-
-Interface().run()
