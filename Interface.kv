@@ -1,17 +1,70 @@
-<Interface>
-    f_username: username
-    f_password: password
-    GridLayout:
-        rows:2
-        cols:2
-        padding:10
-        spacing:10
-        Label:
-            text: 'Username'
-        TextInput:
-            id: username
-        Label:
-            text: 'Password'
-        TextInput:
-            id: password
-            password: True
+<UserInput>
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'horizontal'
+            BoxLayout:
+                orientation: 'vertical'
+                canvas:
+                    Color:
+                        hsv: 309, .81, .61
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                Label:
+                    text:"Desired Price"
+                    font_size: 50
+                    size: self.texture_size
+                    height: 150
+                Label:
+                    text:"Bed"
+                    font_size: 50
+                    center: self.parent.center
+                    size: self.texture_size
+                    height: 150
+                Label:
+                    text:"Bath"
+                    font_size: 50
+                    center: self.parent.center
+                    size: self.texture_size
+                    height: 150
+                Label:
+
+                    text:"Square Foot"
+                    font_size: 50
+                    center: self.parent.center
+                    size: self.texture_size
+                    height: 150
+            BoxLayout:
+                orientation: 'vertical'
+                TextInput:
+                    id: dprice
+                    font_size:50
+                    height: 150
+                TextInput:
+                    id: bed
+                    font_size:50
+
+                    height: 150
+                    # pos: dprice.pos
+                TextInput:
+                    id: bath
+                    font_size:50
+
+                    height: 150
+                TextInput:
+                    id: sqft
+                    font_size:50
+                    height: 150
+        GridLayout:
+            cols: 1
+            rows: 1
+            # orientation: 'horizontal'
+
+            size_hint_y: None
+            pos: root.pos
+            center: self.parent.center
+            Button:
+                text: "Submit"
+                id: submit
+                on_press: print( dprice.text, bed.text, bath.text, sqft.text)
