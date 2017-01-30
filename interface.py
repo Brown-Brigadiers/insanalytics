@@ -10,15 +10,9 @@ from kivy.uix.textinput import TextInput
 
 class Interface(App):
     def build(self):
-        Builder.load_file('Interface.kv')
-        g = GridLayout()
-        l = Label()
-        t = TextInput()
-        l1 = Label()
-        t1 = TextInput()
-        g.add_widget(l)
-        g.add_widget(t)
-        g.add_widget(l1)
-        g.add_widget(t1)
-        return g
-Interface().run()
+        a = AnchorLayout(anchor_x='center', anchor_y='top', padding=[10,100,100,100])
+        bu=Button(text="Nithish")
+        bu.size_hint = (0.5, 0.2)
+        a.add_widget(bu)
+        return a
+
