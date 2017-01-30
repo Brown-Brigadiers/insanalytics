@@ -1,7 +1,7 @@
-import _sqlite3 as sql
-import numpy
+# import _sqlite3 as sql
+# import numpy
 from interface import Interface
-from admin import Admin
+# from admin import Admin
 from user import User
 
 # c = Calculate()
