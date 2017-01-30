@@ -1,16 +1,20 @@
-<UserInput>
+<UserScreen>:
     BoxLayout:
         orientation: 'vertical'
+        Label:
+            text: "INSANALYTICS"
+            font_size:50
+            size_hint_y: None
+            canvas.before:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Rectangle:
+                    size: 100, 100
+
         BoxLayout:
             orientation: 'horizontal'
             BoxLayout:
                 orientation: 'vertical'
-                canvas:
-                    Color:
-                        hsv: 309, .81, .61
-                    Rectangle:
-                        size: self.size
-                        pos: self.pos
                 Label:
                     text:"Desired Price"
                     font_size: 50
@@ -37,34 +41,41 @@
                     height: 150
             BoxLayout:
                 orientation: 'vertical'
-                TextInput:
+                FloatInput:
                     id: dprice
                     font_size:50
                     height: 150
-                TextInput:
+                    multiline: False
+                FloatInput:
                     id: bed
                     font_size:50
-
                     height: 150
-                    # pos: dprice.pos
-                TextInput:
+                    multiline: False
+                FloatInput:
                     id: bath
                     font_size:50
-
                     height: 150
-                TextInput:
+                    multiline: False
+                FloatInput:
                     id: sqft
                     font_size:50
                     height: 150
+                    multiline: False
         GridLayout:
             cols: 1
             rows: 1
             # orientation: 'horizontal'
-
             size_hint_y: None
             pos: root.pos
             center: self.parent.center
             Button:
                 text: "Submit"
+                on_press: root.submit()
                 id: submit
-                on_press: print( dprice.text, bed.text, bath.text, sqft.text)
+<ResultsScreen>:
+    BoxLayout:
+        Label:
+            text:"Nithish!"
+        Button:
+            text:"Return"
+            on_press: root.manager.current = 'UserScreen'
