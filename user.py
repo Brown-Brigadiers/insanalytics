@@ -101,9 +101,9 @@ class User:
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
         # selects ALLLL the x data that is not cost
-        cur.execute('''SELECT sqft, bed, bath from Main''')
+        cur.execute('''SELECT sqft_living, bedrooms, bathrooms from data''')
         allthedata = cur.fetchall()
-        cur.execute('''SELECT cost from Main''')
+        cur.execute('''SELECT price from data''')
         cost = cur.fetchall()
         costarray = numpy.array(cost)
         array = numpy.array(allthedata)
@@ -115,4 +115,9 @@ class User:
         coefficients = numpy.transpose(b)
         x = numpy.array([dprice, bed, bath])
         predictioncost = numpy.dot(coefficients, x)
-        return predictioncost
+        i = [int(i) for i in predictioncost]
+        print(i)
+        for thing in i:
+            return thing
+u = User(75000,1, 0, 670)
+print(u.linear_regression())
