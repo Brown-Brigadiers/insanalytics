@@ -3,32 +3,38 @@ import re
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
-from kivy.properties import ListProperty
+from kivy.properties import ListProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.textinput import TextInput
+from user import User
 
 
 class UserScreen(Screen):
-    def __init__(self, **kwargs):
-        super(UserScreen, self).__init__(**kwargs)
+    text = StringProperty('')
     def submit(self):
+        dprice = self.ids.dprice.text
+        bed = self.ids.bed.text
+        bath = self.ids.bath.text
+        sqft = self.ids.sqft.text
+        self.text = self.returnvalues(dprice, bed, bath, sqft)
+        print(self.text)
         self.manager.current = 'ResultsScreen'
-        print(self.id['bath'])
-    # def return_values(self, dprice, bed, bath, sqft):
-    #     lst = list()
-    #     lst.append(dprice)
-    #     lst.append(bed)
-    #     lst.append(bath)
-    #     lst.append(sqft)
-    #     print(lst)
+
+    def returnvalues(self, dprice, bed, bath , sqft):
+        u = User(dprice, bed, bath, sqft)
+        predictioncost = u.linear_regression()
+        predictioncost = str(predictioncost)
+        return predictioncost
+
 
 class ResultsScreen(Screen):
-    def __init__(self, **kwargs):
-        super(ResultsScreen, self).__init__(**kwargs)
+    label_text = StringProperty('')
+
 
 # sm.current('UserInput')
 class FloatInput(TextInput):
     pat = re.compile('[^0-9]')
+
     def insert_text(self, substring, from_undo=False):
         pat = self.pat
         if '.' in self.text:
@@ -36,10 +42,10 @@ class FloatInput(TextInput):
         else:
             s = '.'.join([re.sub(pat, '', s) for s in substring.split('.', 1)])
         return super(FloatInput, self).insert_text(s, from_undo=from_undo)
+
+
 class InterfaceApp(App):
-    def build(self):
-        sm = ScreenManager()
-        sm.add_widget(UserScreen(name="UserScreen"))
-        sm.add_widget(ResultsScreen(name='ResultsScreen'))
-        return sm
+    pass
+
+
 InterfaceApp().run()
