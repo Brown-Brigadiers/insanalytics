@@ -1,15 +1,23 @@
 ScreenManager:
     id: screen_manager
+
+
     UserScreen:
         id: user_screen
         name: 'UserScreen'
         manager: screen_manager
+
     ResultsScreen:
         name: 'ResultsScreen'
         manager: screen_manager
         label_text: user_screen.text
 
 <UserScreen>:
+    on_enter:
+        bed.text = ''
+        dprice.text = ''
+        bath.text = ''
+        sqft.text = ''
     BoxLayout:
         dprice: dprice
         bath: bath
@@ -20,11 +28,11 @@ ScreenManager:
             text: "INSANALYTICS"
             font_size:50
             size_hint_y: None
-            canvas.before:
+            canvas:
                 Color:
                     rgba: 0, 0, 0, 1
                 Rectangle:
-                    size: 100, 100
+                    size: 10, 10
 
         BoxLayout:
             orientation: 'horizontal'
@@ -32,7 +40,6 @@ ScreenManager:
                 orientation: 'vertical'
                 Label:
                     text:"Desired Price"
-
                     font_size: 50
                     size: self.texture_size
                     height: 150
@@ -57,7 +64,6 @@ ScreenManager:
             BoxLayout:
                 orientation: 'vertical'
                 FloatInput:
-
                     id: dprice
                     font_size:50
                     height: 150
@@ -89,6 +95,7 @@ ScreenManager:
                 on_press: root.submit()
                 id: submit
 <ResultsScreen>:
+
     BoxLayout:
         orientation: 'vertical'
         Label:
