@@ -1,8 +1,5 @@
 import re
-
 from kivy.app import App
-from kivy.lang import Builder
-from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import ListProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.textinput import TextInput
