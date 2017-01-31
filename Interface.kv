@@ -1,5 +1,20 @@
+ScreenManager:
+    id: screen_manager
+    UserScreen:
+        id: user_screen
+        name: 'UserScreen'
+        manager: screen_manager
+    ResultsScreen:
+        name: 'ResultsScreen'
+        manager: screen_manager
+        label_text: user_screen.text
+
 <UserScreen>:
     BoxLayout:
+        dprice: dprice
+        bath: bath
+        bed: bed
+        sqft: sqft
         orientation: 'vertical'
         Label:
             text: "INSANALYTICS"
@@ -17,6 +32,7 @@
                 orientation: 'vertical'
                 Label:
                     text:"Desired Price"
+
                     font_size: 50
                     size: self.texture_size
                     height: 150
@@ -33,7 +49,6 @@
                     size: self.texture_size
                     height: 150
                 Label:
-
                     text:"Square Foot"
                     font_size: 50
                     center: self.parent.center
@@ -42,6 +57,7 @@
             BoxLayout:
                 orientation: 'vertical'
                 FloatInput:
+
                     id: dprice
                     font_size:50
                     height: 150
@@ -66,7 +82,7 @@
             rows: 1
             # orientation: 'horizontal'
             size_hint_y: None
-            pos: root.pos
+            # pos: root.pos
             center: self.parent.center
             Button:
                 text: "Submit"
@@ -74,8 +90,13 @@
                 id: submit
 <ResultsScreen>:
     BoxLayout:
+        orientation: 'vertical'
         Label:
-            text:"Nithish!"
+            text: root.label_text
+            font_size: 50
+            size: self.texture_size
+
         Button:
             text:"Return"
+            size_hint_y:None
             on_press: root.manager.current = 'UserScreen'

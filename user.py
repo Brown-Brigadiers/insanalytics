@@ -1,9 +1,10 @@
 import numpy
-from interface import Interface
 import sqlite3 as sql
+
+
 # new seller class
-class User(Interface):
-    def __init__(self, desired_price, sqft, bed, bath):
+class User:
+    def __init__(self, desired_price, bed, bath, sqft):
         # takes parameters from user and initializes them
         # Interface.__init__(self)
         self.dprice = int(desired_price)
@@ -15,6 +16,7 @@ class User(Interface):
         cur.execute(
             '''CREATE TABLE IF NOT EXISTS User (id integer, desired integer, sqft integer, bed integer, bath integer)''')
         conn.close()
+
     # def databasesearch(self):
     #     completematch = list()
     #     matcheslist = list()  # all of the matches are stored under this list
@@ -92,7 +94,6 @@ class User(Interface):
     #     # print(completematch)
     #     conn.commit()
     #     return costs
-
     def linear_regression(self):
         dprice = self.dprice
         bed = self.bed
@@ -115,4 +116,3 @@ class User(Interface):
         x = numpy.array([dprice, bed, bath])
         predictioncost = numpy.dot(coefficients, x)
         return predictioncost
-
