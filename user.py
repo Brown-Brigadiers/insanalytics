@@ -4,10 +4,10 @@ import sqlite3 as sql
 
 # new seller class
 class User:
-    def __init__(self, desired_price, bed, bath, sqft):
+    def __init__(self, bed, bath, sqft):
         # takes parameters from user and initializes them
         # Interface.__init__(self)
-        self.dprice = int(desired_price)
+
         self.sqft = int(sqft)
         self.bed = int(bed)
         self.bath = int(bath)
@@ -95,13 +95,13 @@ class User:
     #     conn.commit()
     #     return costs
     def linear_regression(self):
-        dprice = self.dprice
         bed = self.bed
         bath = self.bath
+        sqft = self.sqft
         conn = sql.connect("data.sqlite")
         cur = conn.cursor()
         # selects ALLLL the x data that is not cost
-        cur.execute('''SELECT sqft_living, bedrooms, bathrooms from data''')
+        cur.execute('''SELECT bedrooms, bathrooms, sqft_living from data''')
         allthedata = cur.fetchall()
         cur.execute('''SELECT price from data''')
         cost = cur.fetchall()
@@ -113,11 +113,11 @@ class User:
         threeby1 = numpy.dot(arraytranspose, cost)
         b = numpy.dot(threeby3inverse, threeby1)
         coefficients = numpy.transpose(b)
-        x = numpy.array([dprice, bed, bath])
+        x = numpy.array([bed, bath, sqft])
         predictioncost = numpy.dot(coefficients, x)
         i = [int(i) for i in predictioncost]
         print(i)
         for thing in i:
             return thing
-u = User(75000,1, 0, 670)
+u = User(1, 0, 670)
 print(u.linear_regression())

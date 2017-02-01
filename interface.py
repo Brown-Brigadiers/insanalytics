@@ -9,16 +9,15 @@ from user import User
 class UserScreen(Screen):
     text = StringProperty('')
     def submit(self):
-        dprice = self.ids.dprice.text
         bed = self.ids.bed.text
         bath = self.ids.bath.text
         sqft = self.ids.sqft.text
-        self.text = self.returnvalues(dprice, bed, bath, sqft)
+        self.text = self.returnvalues(bed, bath, sqft)
         print(self.text)
         self.manager.current = 'ResultsScreen'
 
-    def returnvalues(self, dprice, bed, bath , sqft):
-        u = User(dprice, bed, bath, sqft)
+    def returnvalues(self, bed, bath , sqft):
+        u = User(bed, bath, sqft)
         predictioncost = u.linear_regression()
         predictioncost = str(predictioncost)
         return predictioncost
