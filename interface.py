@@ -1,32 +1,44 @@
 import re
+
 from kivy.app import App
-from kivy.properties import ListProperty, StringProperty
-from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.properties import StringProperty
+from kivy.uix.screenmanager import Screen
 from kivy.uix.textinput import TextInput
 from user import User
 
 
 class UserScreen(Screen):
     text = StringProperty('')
+    dpricetext = StringProperty('')
     def submit(self):
         bed = self.ids.bed.text
         bath = self.ids.bath.text
         sqft = self.ids.sqft.text
-        self.text = self.returnvalues(bed, bath, sqft)
-        print(self.text)
+        dprice = self.ids.dprice.text
+        self.text = str(self.returnvalues(dprice, bed, bath, sqft))
+        print(self.returnchange(dprice, bed, bath, sqft))
+        print("submit:", self.text)
         self.manager.current = 'ResultsScreen'
 
-    def returnvalues(self, bed, bath , sqft):
+    def returnvalues(self, dprice, bed, bath, sqft):
         u = User(bed, bath, sqft)
         predictioncost = u.linear_regression()
-        predictioncost = str(predictioncost)
         return predictioncost
+
+    def returnchange(self, dprice, bed, bath, sqft):
+        u = User(bed, bath, sqft)
+        predictioncost = u.linear_regression()
+        # self.dpricetext = dprice
+        print("desired", dprice)
+        finalcost = abs(int(dprice) - int(predictioncost))
+        print(finalcost)
+        self.dpricetext = str(finalcost)
+        return finalcost
 
 
 class ResultsScreen(Screen):
     label_text = StringProperty('')
-
-
+    dpricetext = StringProperty('')
 
 
 # sm.current('UserInput')

@@ -119,5 +119,3 @@ class User:
         print(i)
         for thing in i:
             return thing
-u = User(1, 0, 670)
-print(u.linear_regression())
