@@ -11,14 +11,17 @@ class UserScreen(Screen):
     text = StringProperty('')
     dpricetext = StringProperty('')
     def submit(self):
-        bed = self.ids.bed.text
-        bath = self.ids.bath.text
-        sqft = self.ids.sqft.text
-        dprice = self.ids.dprice.text
-        self.text = str(self.returnvalues(dprice, bed, bath, sqft))
-        print(self.returnchange(dprice, bed, bath, sqft))
-        print("submit:", self.text)
-        self.manager.current = 'ResultsScreen'
+        try:
+            bed = self.ids.bed.text
+            bath = self.ids.bath.text
+            sqft = self.ids.sqft.text
+            dprice = self.ids.dprice.text
+            self.text = str(self.returnvalues(dprice, bed, bath, sqft))
+            print(self.returnchange(dprice, bed, bath, sqft))
+            print("submit:", self.text)
+            self.manager.current = 'ResultsScreen'
+        except:
+            pass
 
     def returnvalues(self, dprice, bed, bath, sqft):
         u = User(bed, bath, sqft)

@@ -23,16 +23,16 @@ ScreenManager:
         bed: bed
         sqft: sqft
         orientation: 'vertical'
-
+        canvas.before:
+            Color:
+                rgba: 0.3, 0.85, 0.7, 0.7
+            Rectangle:
+                size: self.size
         Label:
             text: "INSANALYTICS"
             font_size:50
             size_hint_y: None
-            canvas:
-                Color:
-                    rgba: 0.5, 0.2, 0, 1
-                Rectangle:
-                    size: self.size
+
 
         BoxLayout:
             orientation: 'horizontal'
@@ -117,7 +117,7 @@ ScreenManager:
                 text: root.dpricetext
                 font_size: 50
                 size: self.texture_size
-        Button:            
+        Button:
             text:"Return"
             size_hint_y:None
             on_press: root.manager.current = 'UserScreen'
