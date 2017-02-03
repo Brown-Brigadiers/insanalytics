@@ -1,3 +1,4 @@
+import sqlite3 as sql
 class Calculator:
     def stand_dev(self, nums):
         mean = 0
