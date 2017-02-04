@@ -1,3 +1,4 @@
+import sqlite3 as sql
 # Admin class to add new houses in. This will be taken care of through web crawling and data retrieval. Only useful for testing
 class Admin(object):
     def __init__(self):
